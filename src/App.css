@@ -1,0 +1,57 @@
+/* Universal base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  background-color: var(--header-background);
+  padding: 20px 0;
+  text-align: center;
+  margin-block-end: 50px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 800;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Original theme styles - Please note that this styling has been made to be obviously inaccessible for demo purposes*/
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --background-color: #D9EDBF; 
+  --text-color: #FA7070;        
+  --header-background: #7ABA78; 
+  --button-background: #2C7865; 
+  --button-text-color: #ffffff;   
+}
+
+/* High contrast accessible theme styles */
+[data-theme="accessible"] {
+  --font-family: 'Arial', sans-serif;
+  --background-color: #E2E2E2;  
+  --text-color: #30371C;        
+  --header-background: #649CFF; 
+  --button-background: #230058; 
+  --button-text-color: white;   
+}
+
+input {
+  margin: 5px;
+}
